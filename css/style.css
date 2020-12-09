@@ -59,7 +59,196 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 /*Обнуление*/
-body h1 {
-  font-family: "Lovers Quarrel";
-  font-size: 96px;
-  color: gray; }
+body {
+  background-color: #000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal; }
+  body .container {
+    width: 1193px;
+    margin: 0 auto;
+    padding: 0 10px; }
+  body .wrapper-body {
+    position: relative;
+    overflow-x: hidden; }
+    body .wrapper-body .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: fixed;
+      z-index: 99;
+      left: 0;
+      top: 0;
+      width: 30%;
+      height: 100vh;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      background-color: #000;
+      -webkit-transition: 0.7s;
+      -o-transition: 0.7s;
+      transition: 0.7s;
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%); }
+      @media (max-width: 991px) {
+        body .wrapper-body .menu {
+          width: 50%; } }
+      @media (max-width: 767px) {
+        body .wrapper-body .menu {
+          width: 80%; } }
+      @media (max-width: 575px) {
+        body .wrapper-body .menu {
+          width: 90%; } }
+      body .wrapper-body .menu .menu-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 70%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        body .wrapper-body .menu .menu-list a {
+          color: #fff;
+          font-family: "Lovers Quarrel";
+          font-size: 40px;
+          line-height: 9px;
+          letter-spacing: 5px; }
+          body .wrapper-body .menu .menu-list a:hover {
+            text-decoration: underline;
+            color: #e2b024; }
+    body .wrapper-body .menu_active {
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%); }
+    body .wrapper-body .header {
+      position: fixed;
+      z-index: 999;
+      background-color: #000;
+      top: 0;
+      width: 100%;
+      padding-top: 12px; }
+      body .wrapper-body .header .header-inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        body .wrapper-body .header .header-inner .header__text {
+          color: #fff;
+          font-family: Poppins;
+          font-size: 12px;
+          line-height: 18px; }
+        body .wrapper-body .header .header-inner .header__nav {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          body .wrapper-body .header .header-inner .header__nav .header__logo {
+            margin-right: 100px; }
+          body .wrapper-body .header .header-inner .header__nav .header__list {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            body .wrapper-body .header .header-inner .header__nav .header__list a {
+              margin-right: 46px;
+              font-family: Poppins;
+              color: #fff;
+              font-size: 12px;
+              line-height: 18px; }
+              body .wrapper-body .header .header-inner .header__nav .header__list a:hover {
+                color: #e2b024; }
+          body .wrapper-body .header .header-inner .header__nav .header__icons {
+            margin-left: -46px; }
+            body .wrapper-body .header .header-inner .header__nav .header__icons a img {
+              margin-left: 36px; }
+    body .wrapper-body .subheader {
+      margin-top: 100px; }
+    body .wrapper-body .subheader__nav {
+      border: 1px solid #fff;
+      border-right: none;
+      border-left: none;
+      background-color: #000; }
+      body .wrapper-body .subheader__nav .subheader__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 10px 0; }
+        body .wrapper-body .subheader__nav .subheader__list a {
+          color: #fff;
+          font-family: "Lovers Quarrel";
+          font-size: 30px;
+          line-height: 9px; }
+          body .wrapper-body .subheader__nav .subheader__list a:hover {
+            text-decoration: underline;
+            color: #e2b024; }
+    body .wrapper-body .fullpage__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+      body .wrapper-body .fullpage__wrapper .fullpage__top-title {
+        font-family: "Lovers Quarrel";
+        font-size: 30px;
+        line-height: 14px;
+        color: #fff;
+        margin-top: 150px;
+        text-align: center; }
+      body .wrapper-body .fullpage__wrapper .fullpage__title {
+        margin-top: 40px;
+        font-family: "Lovers Quarrel";
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        font-size: 96px;
+        line-height: 56px;
+        letter-spacing: 10px; }
+        body .wrapper-body .fullpage__wrapper .fullpage__title span {
+          color: #e2b024; }
+      body .wrapper-body .fullpage__wrapper .fullpage__text {
+        margin-top: 24px;
+        font-family: Poppins;
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px; }
+      body .wrapper-body .fullpage__wrapper .fullpage-link {
+        margin-top: 35px; }
+        body .wrapper-body .fullpage__wrapper .fullpage-link .fullpage__link {
+          font-family: "Lovers Quarrel";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 9px;
+          color: #e2b024;
+          letter-spacing: 5px; }
+          body .wrapper-body .fullpage__wrapper .fullpage-link .fullpage__link:hover {
+            text-decoration: underline; }

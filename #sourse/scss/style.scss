@@ -2,9 +2,194 @@
 @import "null.scss";
 
 body {
-	h1 {
-		font-family: "Lovers Quarrel";
-		font-size: 80px;
-		color: gray;
-	}
+  background-color: #000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  //CONTAINER============================================
+  .container {
+    width: 1193px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  //HEADER=================================
+  .wrapper-body {
+    position: relative;
+    overflow-x: hidden;
+    .menu {
+      display: flex;
+      position: fixed;
+      z-index: 99;
+      left: 0;
+      top: 0;
+      width: 30%;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+      transition: 0.7s;
+      transform: translateX(-100%);
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        width: 80%;
+      }
+      @media (max-width: 575px) {
+        width: 90%;
+      }
+      .menu-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70%;
+        flex-direction: column;
+
+        a {
+          color: #fff;
+          font-family: "Lovers Quarrel";
+          font-size: 40px;
+          line-height: 9px;
+          letter-spacing: 5px;
+          &:hover {
+            text-decoration: underline;
+            color: #e2b024;
+          }
+        }
+      }
+    }
+    .menu_active {
+      transform: translateX(0%);
+    }
+
+    .header {
+      position: fixed;
+      z-index: 999;
+      background-color: #000;
+      top: 0;
+      width: 100%;
+      padding-top: 12px;
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header__text {
+          color: #fff;
+          font-family: Poppins;
+          font-size: 12px;
+          line-height: 18px;
+        }
+
+        .header__nav {
+          display: flex;
+          align-items: center;
+          .header__logo {
+            margin-right: 100px;
+          }
+          .header__list {
+            display: flex;
+            a {
+              margin-right: 46px;
+              font-family: Poppins;
+              color: #fff;
+              font-size: 12px;
+              line-height: 18px;
+              &:hover {
+                color: #e2b024;
+              }
+            }
+          }
+          .header__icons {
+            margin-left: -46px;
+            a img {
+              margin-left: 36px;
+            }
+          }
+        }
+      }
+    }
+
+    //SUBHEADER=================================
+    .subheader {
+      margin-top: 100px;
+    }
+    .subheader__nav {
+      border: 1px solid #fff;
+      border-right: none;
+      border-left: none;
+      background-color: #000;
+
+      .subheader__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        a {
+          color: #fff;
+          font-family: "Lovers Quarrel";
+          font-size: 30px;
+          line-height: 9px;
+          &:hover {
+            text-decoration: underline;
+            color: #e2b024;
+          }
+        }
+      }
+    }
+
+    //FULLPAGE==============================================
+
+    .fullpage__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .fullpage__top-title {
+        font-family: "Lovers Quarrel";
+        font-size: 30px;
+        line-height: 14px;
+        color: #fff;
+        margin-top: 150px;
+        text-align: center;
+      }
+      .fullpage__title {
+        margin-top: 40px;
+        font-family: "Lovers Quarrel";
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        font-size: 96px;
+        line-height: 56px;
+        letter-spacing: 10px;
+        span {
+          color: #e2b024;
+        }
+      }
+      .fullpage__text {
+        margin-top: 24px;
+        font-family: Poppins;
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .fullpage-link {
+        margin-top: 35px;
+        .fullpage__link {
+          font-family: "Lovers Quarrel";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 9px;
+          color: #e2b024;
+          letter-spacing: 5px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
