@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap");
+
 @import "null.scss";
 
 body {
@@ -43,13 +44,13 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 70%;
+        height: 60%;
         flex-direction: column;
 
         a {
           color: #fff;
-          font-family: "Lovers Quarrel";
-          font-size: 40px;
+          font-family: Merienda;
+          font-size: 24px;
           line-height: 9px;
           letter-spacing: 5px;
           &:hover {
@@ -127,8 +128,8 @@ body {
         padding: 10px 0;
         a {
           color: #fff;
-          font-family: "Lovers Quarrel";
-          font-size: 30px;
+          font-family: Merienda;
+          font-size: 24px;
           line-height: 9px;
           &:hover {
             text-decoration: underline;
@@ -146,7 +147,7 @@ body {
       align-items: center;
       justify-content: flex-end;
       .fullpage__top-title {
-        font-family: "Lovers Quarrel";
+        font-family: Merienda;
         font-size: 30px;
         line-height: 14px;
         color: #fff;
@@ -155,11 +156,11 @@ body {
       }
       .fullpage__title {
         margin-top: 40px;
-        font-family: "Lovers Quarrel";
+        font-family: Merienda;
         text-transform: uppercase;
         color: #fff;
         text-align: center;
-        font-size: 96px;
+        font-size: 90px;
         line-height: 56px;
         letter-spacing: 10px;
         span {
@@ -178,7 +179,7 @@ body {
       .fullpage-link {
         margin-top: 35px;
         .fullpage__link {
-          font-family: "Lovers Quarrel";
+          font-family: Merienda;
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
@@ -189,6 +190,164 @@ body {
             text-decoration: underline;
           }
         }
+      }
+    }
+  }
+
+  .futured_products {
+    background-color: #18191a;
+    .products__title {
+      padding-top: 150px;
+      text-align: center;
+      font-family: Merienda;
+      font-size: 60px;
+      color: #fff;
+      span {
+        color: #e2b024;
+      }
+    }
+    .sorting {
+      display: flex;
+      justify-content: center;
+      padding-top: 70px;
+      font-size: 24px;
+      text-transform: uppercase;
+
+      a {
+        margin-left: 70px;
+        color: #fff;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:hover {
+          color: #e2b024;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .products__row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    .product__cart {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 250px;
+      height: 500px;
+      .product__cart-img {
+        text-align: center;
+        margin-top: -15px;
+      }
+      .product__cart-sale {
+        top: 0;
+        left: 0;
+        padding: 10px;
+        background-color: #e2b024;
+        width: 80px;
+        text-align: center;
+      }
+      .product__cart-name {
+        text-align: center;
+        font-family: Merienda;
+        font-size: 24px;
+
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .product__cart-price {
+        align-items: center;
+        padding-top: 15px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        color: #e2b024;
+        .product__cart-old-price {
+          font-size: 16px;
+          text-decoration: line-through;
+          margin-right: 5px;
+        }
+        .product__cart-new-price {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .product__cart-button {
+    margin-top: 75px;
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: center;
+    a {
+      color: #e2b024;
+      font-family: Merienda;
+      font-size: 18px;
+      text-decoration: underline;
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  //SLIDER=============================================
+  .slider {
+    background: url("../img/review1.png") 100% 100% / cover no-repeat,
+      url("../img/review.png") 100% 100% / cover no-repeat;
+    &__title {
+      padding-top: 100px;
+      text-align: center;
+      font-family: Merienda;
+      font-size: 55px;
+      color: #fff;
+      span {
+        color: #e2b024;
+      }
+    }
+    &__inner {
+      padding-top: 60px;
+
+      .slider__item {
+        &-img {
+          display: flex;
+          justify-content: center;
+        }
+        &-subtitle {
+          padding-top: 30px;
+          font-family: Poppins;
+          color: #fff;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+        }
+        &-text {
+          padding-top: 30px;
+          font-family: Poppins;
+          color: #fff;
+          font-size: 16px;
+          line-height: 1.4;
+          text-align: center;
+          opacity: 0.7;
+        }
+      }
+      .slick-dots {
+        position: static;
+        padding-top: 30px;
+        padding-bottom: 110px;
+      }
+      .slick-dots li button {
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      .slick-dots li.slick-active button {
+        background-color: #e2b024;
+      }
+      .slick-dots li button:before {
+        display: none;
       }
     }
   }

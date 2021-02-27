@@ -1,0 +1,1 @@
+$(function(){$(".slider__inner").slick({arrows:!1,dots:!0})});

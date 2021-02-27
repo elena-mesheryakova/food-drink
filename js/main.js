@@ -1,1 +1,1 @@
-$(".menu-btn").on("click",function(e){e.preventDefault(),$(".menu").toggleClass("menu_active"),$(".content").toggleClass("content_active")});
+$(function(){$(".slider__inner").slick({arrows:!1,dots:!0})}),$(".menu-btn").on("click",function(n){n.preventDefault(),$(".menu").toggleClass("menu_active"),$(".content").toggleClass("content_active")});

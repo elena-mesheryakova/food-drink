@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -112,15 +112,15 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        height: 70%;
+        height: 60%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; }
         body .wrapper-body .menu .menu-list a {
           color: #fff;
-          font-family: "Lovers Quarrel";
-          font-size: 40px;
+          font-family: Merienda;
+          font-size: 24px;
           line-height: 9px;
           letter-spacing: 5px; }
           body .wrapper-body .menu .menu-list a:hover {
@@ -194,8 +194,8 @@ body {
         padding: 10px 0; }
         body .wrapper-body .subheader__nav .subheader__list a {
           color: #fff;
-          font-family: "Lovers Quarrel";
-          font-size: 30px;
+          font-family: Merienda;
+          font-size: 24px;
           line-height: 9px; }
           body .wrapper-body .subheader__nav .subheader__list a:hover {
             text-decoration: underline;
@@ -215,7 +215,7 @@ body {
       -ms-flex-pack: end;
       justify-content: flex-end; }
       body .wrapper-body .fullpage__wrapper .fullpage__top-title {
-        font-family: "Lovers Quarrel";
+        font-family: Merienda;
         font-size: 30px;
         line-height: 14px;
         color: #fff;
@@ -223,11 +223,11 @@ body {
         text-align: center; }
       body .wrapper-body .fullpage__wrapper .fullpage__title {
         margin-top: 40px;
-        font-family: "Lovers Quarrel";
+        font-family: Merienda;
         text-transform: uppercase;
         color: #fff;
         text-align: center;
-        font-size: 96px;
+        font-size: 90px;
         line-height: 56px;
         letter-spacing: 10px; }
         body .wrapper-body .fullpage__wrapper .fullpage__title span {
@@ -243,7 +243,7 @@ body {
       body .wrapper-body .fullpage__wrapper .fullpage-link {
         margin-top: 35px; }
         body .wrapper-body .fullpage__wrapper .fullpage-link .fullpage__link {
-          font-family: "Lovers Quarrel";
+          font-family: Merienda;
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
@@ -252,3 +252,150 @@ body {
           letter-spacing: 5px; }
           body .wrapper-body .fullpage__wrapper .fullpage-link .fullpage__link:hover {
             text-decoration: underline; }
+  body .futured_products {
+    background-color: #18191a; }
+    body .futured_products .products__title {
+      padding-top: 150px;
+      text-align: center;
+      font-family: Merienda;
+      font-size: 60px;
+      color: #fff; }
+      body .futured_products .products__title span {
+        color: #e2b024; }
+    body .futured_products .sorting {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-top: 70px;
+      font-size: 24px;
+      text-transform: uppercase; }
+      body .futured_products .sorting a {
+        margin-left: 70px;
+        color: #fff; }
+        body .futured_products .sorting a:first-child {
+          margin-left: 0; }
+        body .futured_products .sorting a:hover {
+          color: #e2b024;
+          text-decoration: underline; }
+  body .products__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 100px; }
+    body .products__row .product__cart {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 250px;
+      height: 500px; }
+      body .products__row .product__cart .product__cart-img {
+        text-align: center;
+        margin-top: -15px; }
+      body .products__row .product__cart .product__cart-sale {
+        top: 0;
+        left: 0;
+        padding: 10px;
+        background-color: #e2b024;
+        width: 80px;
+        text-align: center; }
+      body .products__row .product__cart .product__cart-name {
+        text-align: center;
+        font-family: Merienda;
+        font-size: 24px; }
+        body .products__row .product__cart .product__cart-name a {
+          color: #fff; }
+          body .products__row .product__cart .product__cart-name a:hover {
+            text-decoration: underline; }
+      body .products__row .product__cart .product__cart-price {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 15px;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #e2b024; }
+        body .products__row .product__cart .product__cart-price .product__cart-old-price {
+          font-size: 16px;
+          text-decoration: line-through;
+          margin-right: 5px; }
+        body .products__row .product__cart .product__cart-price .product__cart-new-price {
+          font-size: 24px; }
+  body .product__cart-button {
+    margin-top: 75px;
+    padding-bottom: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    body .product__cart-button a {
+      color: #e2b024;
+      font-family: Merienda;
+      font-size: 18px;
+      text-decoration: underline; }
+      body .product__cart-button a span {
+        text-transform: uppercase; }
+  body .slider {
+    background: url("../img/review1.png") 100% 100%/cover no-repeat, url("../img/review.png") 100% 100%/cover no-repeat; }
+    body .slider__title {
+      padding-top: 100px;
+      text-align: center;
+      font-family: Merienda;
+      font-size: 55px;
+      color: #fff; }
+      body .slider__title span {
+        color: #e2b024; }
+    body .slider__inner {
+      padding-top: 60px; }
+      body .slider__inner .slider__item-img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+      body .slider__inner .slider__item-subtitle {
+        padding-top: 30px;
+        font-family: Poppins;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center; }
+      body .slider__inner .slider__item-text {
+        padding-top: 30px;
+        font-family: Poppins;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: center;
+        opacity: 0.7; }
+      body .slider__inner .slick-dots {
+        position: static;
+        padding-top: 30px;
+        padding-bottom: 110px; }
+      body .slider__inner .slick-dots li button {
+        background-color: #fff;
+        border-radius: 50%; }
+      body .slider__inner .slick-dots li.slick-active button {
+        background-color: #e2b024; }
+      body .slider__inner .slick-dots li button:before {
+        display: none; }
