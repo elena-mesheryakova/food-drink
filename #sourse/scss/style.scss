@@ -239,6 +239,10 @@ body {
       .product__cart-img {
         text-align: center;
         margin-top: -15px;
+        &:hover {
+          border: 2px solid #e2b024;
+          cursor: pointer;
+        }
       }
       .product__cart-sale {
         top: 0;
@@ -334,20 +338,221 @@ body {
           opacity: 0.7;
         }
       }
-      .slick-dots {
-        position: static;
+    }
+  }
+  .slick-dots {
+    position: static;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .slick-dots li button {
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .slick-dots li.slick-active button {
+    background-color: #e2b024;
+  }
+  .slick-dots li button:before {
+    display: none;
+  }
+
+  .slider__offer {
+    .slick-slide {
+      transition: all 0.3s ease 0s;
+      opacity: 0.4;
+      &.slick-center {
+        opacity: 1;
+      }
+    }
+    &-inner {
+      padding-top: 100px;
+    }
+    &-price {
+      margin-top: -70px;
+      margin-left: 30px;
+      .price-title {
+        color: #fff;
+        font-family: Merienda;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+      .price-price {
+        font-family: Poppins;
+        color: #fff;
+        font-size: 35px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .slider__events {
+    .slick-prev::before,
+    .slick-next::before {
+      display: none;
+    }
+    .slick-next {
+      background: url("/img/next.svg");
+      width: 67px;
+      height: 67px;
+      right: -90px;
+      top: 60%;
+    }
+    .slick-prev {
+      background: url("/img/prev.svg");
+      width: 67px;
+      height: 67px;
+      left: -90px;
+      top: 60%;
+    }
+    .slider__events-wrapper {
+      display: flex;
+    }
+    padding-bottom: 50px;
+    &-inner {
+      padding-top: 90px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding-left: 30px;
+      background-color: #18191a;
+      .events__info-title {
+        color: #fff;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      span {
+        font-family: Poppins;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #fff;
+        padding-top: 10px;
+      }
+      .events__info-text {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 300;
+        width: 515px;
+        padding-top: 45px;
+      }
+      .events__info-btn {
+        padding-top: 45px;
+        .events__info-link {
+          font-family: Merienda;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 10px;
+          color: #e2b024;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  //CONTACT=============================================
+  .contact__wrapper {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    display: flex;
+    .contact__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-text {
+        color: #fff;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 2;
+        padding-right: 50px;
+      }
+      &-contacts {
         padding-top: 30px;
-        padding-bottom: 110px;
+        .contact__link {
+          padding-top: 40px;
+          a {
+            color: #fff;
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 18px;
+          }
+        }
+        .contact-img {
+          padding-right: 30px;
+        }
       }
-      .slick-dots li button {
-        background-color: #fff;
-        border-radius: 50%;
+      &-links {
+        padding-top: 60px;
+        img + img {
+          margin-left: 55px;
+        }
       }
-      .slick-dots li.slick-active button {
+    }
+    .contact__form {
+      form {
+        display: flex;
+        flex-direction: column;
+        input {
+          color: #fff;
+          padding-left: 20px;
+        }
+        span {
+          margin-left: 90px;
+          width: 580px;
+          height: 1px;
+          background-color: #fff;
+          display: block;
+        }
+        .label__span {
+          width: 540px;
+          margin-left: 130px;
+        }
+      }
+      label {
+        color: #fff;
+        position: absolute;
+        margin-top: -12px;
+        margin-left: 10px;
+        font-family: Poppins;
+        font-size: 24px;
+      }
+
+      &-forms .tel {
+        position: relative;
+      }
+      &-forms {
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-top: none;
+        width: 670px;
+        padding: 20px 0;
+        margin-bottom: 30px;
+      }
+      textarea {
+        resize: none;
+        color: #fff;
+        padding-left: 20px;
+      }
+      &-btn {
+        margin-top: 20px;
+        width: 200px;
+        padding: 10px 0;
         background-color: #e2b024;
-      }
-      .slick-dots li button:before {
-        display: none;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 36px;
       }
     }
   }

@@ -304,6 +304,9 @@ body {
       body .products__row .product__cart .product__cart-img {
         text-align: center;
         margin-top: -15px; }
+        body .products__row .product__cart .product__cart-img:hover {
+          border: 2px solid #e2b024;
+          cursor: pointer; }
       body .products__row .product__cart .product__cart-sale {
         top: 0;
         left: 0;
@@ -388,14 +391,193 @@ body {
         line-height: 1.4;
         text-align: center;
         opacity: 0.7; }
-      body .slider__inner .slick-dots {
-        position: static;
-        padding-top: 30px;
-        padding-bottom: 110px; }
-      body .slider__inner .slick-dots li button {
+  body .slick-dots {
+    position: static;
+    padding-top: 30px;
+    padding-bottom: 50px; }
+  body .slick-dots li button {
+    background-color: #fff;
+    border-radius: 50%; }
+  body .slick-dots li.slick-active button {
+    background-color: #e2b024; }
+  body .slick-dots li button:before {
+    display: none; }
+  body .slider__offer .slick-slide {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    opacity: 0.4; }
+    body .slider__offer .slick-slide.slick-center {
+      opacity: 1; }
+  body .slider__offer-inner {
+    padding-top: 100px; }
+  body .slider__offer-price {
+    margin-top: -70px;
+    margin-left: 30px; }
+    body .slider__offer-price .price-title {
+      color: #fff;
+      font-family: Merienda;
+      font-size: 18px;
+      text-transform: uppercase; }
+    body .slider__offer-price .price-price {
+      font-family: Poppins;
+      color: #fff;
+      font-size: 35px;
+      line-height: 1.5;
+      font-weight: bold; }
+  body .slider__events {
+    padding-bottom: 50px; }
+    body .slider__events .slick-prev::before,
+    body .slider__events .slick-next::before {
+      display: none; }
+    body .slider__events .slick-next {
+      background: url("/img/next.svg");
+      width: 67px;
+      height: 67px;
+      right: -90px;
+      top: 60%; }
+    body .slider__events .slick-prev {
+      background: url("/img/prev.svg");
+      width: 67px;
+      height: 67px;
+      left: -90px;
+      top: 60%; }
+    body .slider__events .slider__events-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    body .slider__events-inner {
+      padding-top: 90px; }
+    body .slider__events-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%;
+      padding-left: 30px;
+      background-color: #18191a; }
+      body .slider__events-info .events__info-title {
+        color: #fff;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 24px; }
+      body .slider__events-info span {
+        font-family: Poppins;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #fff;
+        padding-top: 10px; }
+      body .slider__events-info .events__info-text {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 300;
+        width: 515px;
+        padding-top: 45px; }
+      body .slider__events-info .events__info-btn {
+        padding-top: 45px; }
+        body .slider__events-info .events__info-btn .events__info-link {
+          font-family: Merienda;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 10px;
+          color: #e2b024;
+          letter-spacing: 3px;
+          text-transform: uppercase; }
+          body .slider__events-info .events__info-btn .events__info-link:hover {
+            text-decoration: underline; }
+  body .contact__wrapper {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body .contact__wrapper .contact__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      body .contact__wrapper .contact__info-text {
+        color: #fff;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 2;
+        padding-right: 50px; }
+      body .contact__wrapper .contact__info-contacts {
+        padding-top: 30px; }
+        body .contact__wrapper .contact__info-contacts .contact__link {
+          padding-top: 40px; }
+          body .contact__wrapper .contact__info-contacts .contact__link a {
+            color: #fff;
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 18px; }
+        body .contact__wrapper .contact__info-contacts .contact-img {
+          padding-right: 30px; }
+      body .contact__wrapper .contact__info-links {
+        padding-top: 60px; }
+        body .contact__wrapper .contact__info-links img + img {
+          margin-left: 55px; }
+    body .contact__wrapper .contact__form form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      body .contact__wrapper .contact__form form input {
+        color: #fff;
+        padding-left: 20px; }
+      body .contact__wrapper .contact__form form span {
+        margin-left: 90px;
+        width: 580px;
+        height: 1px;
         background-color: #fff;
-        border-radius: 50%; }
-      body .slider__inner .slick-dots li.slick-active button {
-        background-color: #e2b024; }
-      body .slider__inner .slick-dots li button:before {
-        display: none; }
+        display: block; }
+      body .contact__wrapper .contact__form form .label__span {
+        width: 540px;
+        margin-left: 130px; }
+    body .contact__wrapper .contact__form label {
+      color: #fff;
+      position: absolute;
+      margin-top: -12px;
+      margin-left: 10px;
+      font-family: Poppins;
+      font-size: 24px; }
+    body .contact__wrapper .contact__form-forms .tel {
+      position: relative; }
+    body .contact__wrapper .contact__form-forms {
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-top: none;
+      width: 670px;
+      padding: 20px 0;
+      margin-bottom: 30px; }
+    body .contact__wrapper .contact__form textarea {
+      resize: none;
+      color: #fff;
+      padding-left: 20px; }
+    body .contact__wrapper .contact__form-btn {
+      margin-top: 20px;
+      width: 200px;
+      padding: 10px 0;
+      background-color: #e2b024;
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 36px; }
