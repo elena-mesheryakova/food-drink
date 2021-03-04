@@ -20,6 +20,8 @@
           <a href="">Blog</a>
           <a href="">Product Details</a>
           <a href="">Contact</a>
+          <a href="">Login</a>
+          <a href="">Register</a>
         </nav>
       </section>
       <div class="content">
@@ -29,10 +31,10 @@
               <div class="header__text">
                 <p>We Ship Everywhere! Free In The Us!</p>
               </div>
+              <div class="header__logo">
+                <img src="./img/logo.png" alt="" class="header__logo-img" />
+              </div>
               <nav class="header__nav">
-                <div class="header__logo">
-                  <img src="./img/logo.png" alt="" class="header__logo-img" />
-                </div>
                 <ul class="header__list">
                   <li class="header__link"><a href="">Login</a></li>
                   <li class="header__link"><a href="">Register</a></li>
@@ -446,24 +448,22 @@
                 </div>
               </div>
               <div class="contact__form">
-                <form action="">
-                  <p>
+                <form action="#">
+                  <p class="contact__form-line">
                     <span class="label">Name</span>
                     <input class="contact__form-forms tel" type="text" />
                   </p>
-                  <p>
+                  <p class="contact__form-line">
                     <span class="label">Email</span>
 
-                    <span></span>
                     <input class="contact__form-forms" type="email" />
                   </p>
-                  <p>
+                  <p class="contact__form-line">
                     <span class="label">Phone</span>
 
-                    <span></span>
                     <input class="contact__form-forms" type="tel" />
                   </p>
-                  <p>
+                  <p class="contact__form-line">
                     <span class="label label-span">Messege</span>
                     <textarea class="contact__form-forms"></textarea>
                   </p>
@@ -480,7 +480,7 @@
             <p class="newsletter__text">
               Sign Up to our newsletter and Save 40% on next Purchase
             </p>
-            <form action="" class="newsletter__form">
+            <form action="#" class="newsletter__form">
               <input
                 type="email"
                 placeholder="Email"
