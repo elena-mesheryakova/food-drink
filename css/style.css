@@ -616,7 +616,8 @@ body {
       @media (max-width: 767px) {
         body .slider__events-info .events__info-text {
           width: 100%;
-          text-align: center; } }
+          text-align: center;
+          padding: 0 10px; } }
     body .slider__events-info .events__info-btn {
       padding-top: 45px;
       padding-bottom: 45px; }
