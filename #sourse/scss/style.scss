@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family='Cormorant Infant', serif;:wght@400;700&family='Cormorant Infant', serif;:wght@300;400;600;700&display=swap");
 
 @import "null.scss";
 
 body {
   background-color: #000;
-  font-family: Poppins;
+  font-family: "Cormorant Infant", serif;
   font-style: normal;
   font-weight: normal;
   //CONTAINER============================================
@@ -49,8 +49,8 @@ body {
 
         a {
           color: #fff;
-          font-family: Poppins;
-          font-size: 20px;
+          font-family: "Cormorant Infant", serif;
+          font-size: 25px;
           line-height: 9px;
 
           &:hover {
@@ -79,7 +79,7 @@ body {
         position: relative;
         .header__text {
           color: #fff;
-          font-family: Poppins;
+          font-family: "Cormorant Infant", serif;
           font-size: 12px;
           line-height: 18px;
           @media (max-width: 767px) {
@@ -108,7 +108,7 @@ body {
             }
             a {
               margin-right: 46px;
-              font-family: Poppins;
+              font-family: "Cormorant Infant", serif;
               color: #fff;
               font-size: 12px;
               line-height: 18px;
@@ -149,7 +149,7 @@ body {
         padding: 10px 0;
         a {
           color: #fff;
-          font-family: Merienda;
+          font-family: "Cormorant Infant", serif;
           font-size: 24px;
           line-height: 9px;
           &:hover {
@@ -168,12 +168,13 @@ body {
       align-items: center;
       justify-content: flex-end;
       .fullpage__top-title {
-        font-family: Merienda;
+        font-family: "Cormorant Infant", serif;
         font-size: 30px;
         line-height: 14px;
         color: #fff;
         margin-top: 150px;
         text-align: center;
+        text-transform: uppercase;
         @media (max-width: 991px) {
           font-size: 25px;
         }
@@ -186,7 +187,7 @@ body {
       }
       .fullpage__title {
         margin-top: 40px;
-        font-family: Merienda;
+        font-family: "Cormorant Infant", serif;
         text-transform: uppercase;
         color: #fff;
         text-align: center;
@@ -208,7 +209,7 @@ body {
       }
       .fullpage__text {
         margin-top: 24px;
-        font-family: Poppins;
+        font-family: "Cormorant Infant", serif;
         color: #fff;
         text-align: center;
         font-weight: 300;
@@ -221,7 +222,7 @@ body {
       .fullpage-link {
         margin-top: 35px;
         .fullpage__link {
-          font-family: Merienda;
+          font-family: "Cormorant Infant", serif;
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
@@ -241,7 +242,7 @@ body {
     .products__title {
       padding-top: 150px;
       text-align: center;
-      font-family: Merienda;
+      font-family: "Cormorant Infant", serif;
       font-size: 60px;
       color: #fff;
       span {
@@ -332,7 +333,7 @@ body {
       }
       .product__cart-name {
         text-align: center;
-        font-family: Merienda;
+        font-family: "Cormorant Infant", serif;
         font-size: 24px;
 
         a {
@@ -373,7 +374,7 @@ body {
     }
     a {
       color: #e2b024;
-      font-family: Merienda;
+      font-family: "Cormorant Infant", serif;
       font-size: 18px;
       text-decoration: underline;
       span {
@@ -389,7 +390,7 @@ body {
     &__title {
       padding-top: 100px;
       text-align: center;
-      font-family: Merienda;
+      font-family: "Cormorant Infant", serif;
       font-size: 55px;
       color: #fff;
       span {
@@ -414,17 +415,17 @@ body {
         }
         &-subtitle {
           padding-top: 30px;
-          font-family: Poppins;
+          font-family: "Cormorant Infant", serif;
           color: #fff;
-          font-size: 24px;
+          font-size: 28px;
           font-weight: bold;
           text-align: center;
         }
         &-text {
           padding-top: 30px;
-          font-family: Poppins;
+          font-family: "Cormorant Infant", serif;
           color: #fff;
-          font-size: 16px;
+          font-size: 20px;
           line-height: 1.4;
           text-align: center;
           opacity: 0.7;
@@ -477,12 +478,12 @@ body {
       }
       .price-title {
         color: #fff;
-        font-family: Merienda;
+        font-family: "Cormorant Infant", serif;
         font-size: 18px;
         text-transform: uppercase;
       }
       .price-price {
-        font-family: Poppins;
+        font-family: "Cormorant Infant", serif;
         color: #fff;
         font-size: 35px;
         line-height: 1.5;
@@ -546,7 +547,7 @@ body {
       }
       .events__info-title {
         color: #fff;
-        font-family: Poppins;
+        font-family: "Cormorant Infant", serif;
         font-weight: 600;
         font-size: 24px;
         @media (max-width: 767px) {
@@ -557,7 +558,7 @@ body {
         }
       }
       span {
-        font-family: Poppins;
+        font-family: "Cormorant Infant", serif;
         font-size: 18px;
         line-height: 1.4;
         color: #fff;
@@ -568,7 +569,7 @@ body {
       }
       .events__info-text {
         color: #fff;
-        font-family: Poppins;
+        font-family: "Cormorant Infant", serif;
         font-size: 18px;
         line-height: 1.4;
         font-weight: 300;
@@ -591,7 +592,7 @@ body {
           text-align: center;
         }
         .events__info-link {
-          font-family: Merienda;
+          font-family: "Cormorant Infant", serif;
           font-style: normal;
           font-weight: normal;
           font-size: 18px;
@@ -624,7 +625,7 @@ body {
 
       &-text {
         color: #fff;
-        font-family: Poppins;
+        font-family: "Cormorant Infant", serif;
         font-weight: 300;
         font-size: 18px;
         line-height: 2;
@@ -647,7 +648,7 @@ body {
 
           a {
             color: #fff;
-            font-family: Poppins;
+            font-family: "Cormorant Infant", serif;
             font-weight: 300;
             font-size: 18px;
           }
@@ -707,7 +708,7 @@ body {
         width: 100%;
 
         padding-left: 30px;
-        font-family: Poppins;
+        font-family: "Cormorant Infant", serif;
         font-size: 24px;
         position: relative;
         @media (max-width: 1190px) {
@@ -835,7 +836,7 @@ body {
         width: 200px;
         padding: 10px 0;
         background-color: #e2b024;
-        font-family: Poppins;
+        font-family: "Cormorant Infant", serif;
         font-weight: 600;
         font-size: 36px;
         @media (max-width: 1190px) {
@@ -855,7 +856,7 @@ body {
     &__title {
       padding-top: 70px;
       text-align: center;
-      font-family: Merienda;
+      font-family: "Cormorant Infant", serif;
       font-size: 55px;
       color: #e2b024;
       text-transform: uppercase;
@@ -870,7 +871,7 @@ body {
     &__text {
       padding-top: 30px;
       text-align: center;
-      font-family: Merienda;
+      font-family: "Cormorant Infant", serif;
       color: #fff;
       font-size: 18px;
       @media (max-width: 575px) {
@@ -936,7 +937,7 @@ body {
       &-title {
         color: #e2b024;
         font-size: 20px;
-        font-family: Merienda;
+        font-family: "Cormorant Infant", serif;
         text-transform: uppercase;
       }
       &-nav {
